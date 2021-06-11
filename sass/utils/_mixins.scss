@@ -1,0 +1,15 @@
+@mixin btnviolet {
+    padding: 10px;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    color: #fff;
+    border-radius: 25px;
+    border-style: none;
+    font-family: $fonts1;
+    font-size: 1rem;
+    box-shadow: 0px 7px 10px -6px #b9b8b8;
+}
+
+@mixin survol {
+    opacity: 0.60;
+    box-shadow: 6px 6px 5px 2px grey;
+}

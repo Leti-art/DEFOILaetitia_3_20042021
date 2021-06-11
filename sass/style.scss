@@ -1,3 +1,70 @@
+@import "base/reset.scss";
+@import "base/fonts.scss";
+@import "utils/mixins.scss";
 body {
-    background: skyblue;
+    min-width: 375px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    font-family: $fonts1;
 }
+
+
+/*header*/
+
+header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.logo {
+    width: 150px;
+    padding: 15px 0;
+}
+
+
+/*localisation-Titre*/
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: #faf8f8;
+    .presentation__localisation {
+        display: flex;
+        justify-content: center;
+        background-color: #eeecec;
+        padding: 10px 0;
+        border-top: 3px solid#d6d4d4;
+        .icon {
+            margin-right: 15px;
+        }
+    }
+    .presentation__site {
+        margin: 20px 45px;
+        h1 {
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px;
+        }
+        p {
+            font-weight: 100;
+        }
+    }
+}
+
+.btn__action {
+    @include btnviolet;
+    &:hover {
+        cursor: pointer;
+        @include survol;
+    }
+}
+
+
+/*Fonctionnement*/
+
+
+/*Resataurant*/
+
+
+/*footer*/
