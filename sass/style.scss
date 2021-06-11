@@ -4,10 +4,10 @@
 @import "utils/variables.scss";
 body {
     min-width: 375px;
-    text-decoration: none;
     list-style-type: none;
     text-align: center;
     font-family: $fonts1;
+    text-decoration: none;
 }
 
 
@@ -33,7 +33,7 @@ header {
     .presentation__localisation {
         display: flex;
         justify-content: center;
-        background-color: #eeecec;
+        background-color: #f0ecec;
         padding: 10px 0;
         border-top: 3px solid#d6d4d4;
         .icon {
@@ -112,7 +112,7 @@ header {
 }
 
 .fonctionnement__liste:hover {
-    background-color: #f5eeee;
+    background-color: #f8eef8;
     i {
         color: $primary-color;
     }
@@ -122,8 +122,75 @@ header {
 /*Resataurant*/
 
 .restaurants {
-    background-color: #dfdddd;
+    background-color: #f3f0f0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @media only screen and (min-width: 815px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .restaurants__titre {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: left;
+        padding: 30px 0 30px 15px;
+    }
+    .restaurants__cartes {
+        @include restocarte;
+        margin: 20px 15px;
+        text-decoration: none;
+        color: rgb(29, 165, 81);
+        position: relative;
+        img {
+            width: 100%;
+            height: 70%;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+        .restaurants__cartes__texte {
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+            padding: 15px 20px 0 10px;
+            text-align: left;
+        }
+        .restaurants__nouveau {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            @include nouveau;
+        }
+        i {
+            font-size: 25px;
+        }
+        i:hover {
+            @include coeur;
+        }
+    }
 }
 
 
 /*footer*/
+
+.footer {
+    background-color: rgb(46, 46, 46);
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+    img {
+        filter: invert(100%);
+        width: 100px;
+        padding-bottom: 15px;
+    }
+    .footer__liste {
+        padding-bottom: 25px;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        i {
+            padding-right: 25px;
+            width: 5px;
+        }
+    }
+}

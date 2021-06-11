@@ -78,10 +78,10 @@ th {
 
 body {
   min-width: 375px;
-  text-decoration: none;
   list-style-type: none;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 /*header*/
@@ -104,7 +104,7 @@ header {
 .presentation .presentation__localisation {
   display: flex;
   justify-content: center;
-  background-color: #eeecec;
+  background-color: #f0ecec;
   padding: 10px 0;
   border-top: 3px solid #d6d4d4;
 }
@@ -187,7 +187,7 @@ header {
 }
 
 .fonctionnement__liste:hover {
-  background-color: #f5eeee;
+  background-color: #f8eef8;
 }
 .fonctionnement__liste:hover i {
   color: #9356DC;
@@ -195,9 +195,86 @@ header {
 
 /*Resataurant*/
 .restaurants {
-  background-color: #dfdddd;
+  background-color: #f3f0f0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 815px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.restaurants .restaurants__titre {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  padding: 30px 0 30px 15px;
+}
+.restaurants .restaurants__cartes {
+  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+  height: 250px;
+  box-shadow: 0px 7px 10px -6px #b9b8b8;
+  margin: 20px 15px;
+  text-decoration: none;
+  color: #1da551;
+  position: relative;
+}
+.restaurants .restaurants__cartes img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.restaurants .restaurants__cartes .restaurants__cartes__texte {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  padding: 15px 20px 0 10px;
+  text-align: left;
+}
+.restaurants .restaurants__cartes .restaurants__nouveau {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  padding: 5px 7px;
+  border: 1px solid #a0f7d0;
+  background-color: #a0f7d0;
+}
+.restaurants .restaurants__cartes i {
+  font-size: 25px;
+}
+.restaurants .restaurants__cartes i:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /*footer*/
+.footer {
+  background-color: #2e2e2e;
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+}
+.footer img {
+  filter: invert(100%);
+  width: 100px;
+  padding-bottom: 15px;
+}
+.footer .footer__liste {
+  padding-bottom: 25px;
+}
+.footer .footer__liste a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer__liste i {
+  padding-right: 25px;
+  width: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

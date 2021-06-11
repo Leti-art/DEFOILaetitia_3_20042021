@@ -13,3 +13,24 @@
     opacity: 0.60;
     box-shadow: 6px 6px 5px 2px grey;
 }
+
+@mixin restocarte {
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    height: 250px;
+    box-shadow: 0px 7px 10px -6px #b9b8b8;
+}
+
+@mixin nouveau {
+    border-radius: 5px;
+    padding: 5px 7px;
+    border: 1px solid #a0f7d0;
+    background-color: #a0f7d0;
+}
+
+@mixin coeur {
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
