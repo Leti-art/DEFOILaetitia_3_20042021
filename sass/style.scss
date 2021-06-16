@@ -242,12 +242,28 @@ header {
     }
 }
 
-.background {
+.background1 {
     background-image: url(../Maquettes/images/restocomp/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     @include background;
 }
 
+.background2 {
+    background-image: url(../Maquettes/images/restocomp/stil-u2Lp8tXIcjw-unsplash.jpg);
+    @include background;
+}
+
+.background3 {
+    background-image: url(../Maquettes/images/restocomp/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    @include background;
+}
+
+.background4 {
+    background-image: url(../Maquettes/images/restocomp/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    @include background;
+}
+
 .menu {
+    background-color: rgb(245, 245, 245);
     display: grid;
     grid-template-columns: repeat(1.1fr);
     .menu__name {
@@ -257,11 +273,49 @@ header {
         font-family: $fonts2;
         font-size: 25px;
         margin: 20px 0;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        margin-top: -20px;
+        border-radius: 40px 40px 0 0;
+        margin-top: -30px;
+        background-color: rgb(245, 245, 245);
     }
     i {
         font-size: 20px;
     }
+    h1 {
+        padding: 20px;
+    }
+}
+
+.btn__menu {
+    @include btn__menu;
+    p {
+        text-align: left;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.menu__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .menu__entrees {
+        margin-bottom: 30px;
+        .menu__entrees__titre {
+            @include menu-titre;
+        }
+    }
+    .menu__plats {
+        margin-bottom: 30px;
+    }
+    .menu__desserts {
+        margin-bottom: 30px;
+        .menu__desserts__titre {
+            @include menu-titre;
+        }
+    }
+}
+
+.commander {
+    margin: 50px 0;
 }

@@ -333,14 +333,36 @@ header {
   text-align: center;
 }
 
-.background {
+.background1 {
   background-image: url(../Maquettes/images/restocomp/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-position: center, center;
   background-size: cover;
   height: 20em;
 }
 
+.background2 {
+  background-image: url(../Maquettes/images/restocomp/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-position: center, center;
+  background-size: cover;
+  height: 20em;
+}
+
+.background3 {
+  background-image: url(../Maquettes/images/restocomp/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-position: center, center;
+  background-size: cover;
+  height: 20em;
+}
+
+.background4 {
+  background-image: url(../Maquettes/images/restocomp/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-position: center, center;
+  background-size: cover;
+  height: 20em;
+}
+
 .menu {
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(1.1fr);
 }
@@ -351,12 +373,62 @@ header {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
   margin: 20px 0;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  margin-top: -20px;
+  border-radius: 40px 40px 0 0;
+  margin-top: -30px;
+  background-color: whitesmoke;
 }
 .menu i {
   font-size: 20px;
+}
+.menu h1 {
+  padding: 20px;
+}
+
+.btn__menu {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 7px 10px -6px #b9b8b8;
+  padding: 15px;
+  margin: 10px;
+}
+.btn__menu p {
+  text-align: left;
+}
+.btn__menu:hover {
+  cursor: pointer;
+}
+
+.menu__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__bloc .menu__entrees {
+  margin-bottom: 30px;
+}
+.menu__bloc .menu__entrees .menu__entrees__titre {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+.menu__bloc .menu__plats {
+  margin-bottom: 30px;
+}
+.menu__bloc .menu__desserts {
+  margin-bottom: 30px;
+}
+.menu__bloc .menu__desserts .menu__desserts__titre {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+
+.commander {
+  margin: 50px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
