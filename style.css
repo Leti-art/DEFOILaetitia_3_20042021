@@ -76,6 +76,8 @@ th {
   padding: 0;
 }
 
+/*responsive */
+/*menu*/
 body {
   min-width: 375px;
   list-style-type: none;
@@ -84,6 +86,13 @@ body {
   text-decoration: none;
 }
 
+.wrapper {
+  min-width: 375px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/*PAGE D'ACCUEIL*/
 /*header*/
 header {
   width: 100%;
@@ -92,7 +101,7 @@ header {
 
 .logo {
   width: 150px;
-  padding: 15px 0;
+  padding: 20px 0 15px 0;
 }
 
 /*localisation-Titre*/
@@ -152,10 +161,23 @@ header {
   text-align: left;
   padding-left: 15px;
 }
+@media only screen and (min-width: 815px) {
+  .fonctionnement .fonctionnement__titre {
+    text-align: center;
+  }
+}
 .fonctionnement .fonctionnement__explication {
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .fonctionnement .fonctionnement__explication {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
 }
 .fonctionnement .fonctionnement__liste {
   display: flex;
@@ -167,6 +189,19 @@ header {
   box-shadow: 0px 7px 10px -6px #b9b8b8;
   position: relative;
   background-color: #ececec;
+}
+.fonctionnement .fonctionnement__liste:hover {
+  background-color: #f8eef8;
+  cursor: pointer;
+}
+.fonctionnement .fonctionnement__liste:hover i {
+  color: #9356DC;
+}
+@media only screen and (min-width: 1000px) {
+  .fonctionnement .fonctionnement__liste {
+    margin: 10px;
+    padding-right: 35px;
+  }
 }
 .fonctionnement .fonctionnement__liste i {
   padding: 0 20px 0 50px;
@@ -186,24 +221,11 @@ header {
   left: -15px;
 }
 
-.fonctionnement__liste:hover {
-  background-color: #f8eef8;
-}
-.fonctionnement__liste:hover i {
-  color: #9356DC;
-}
-
 /*Resataurant*/
 .restaurants {
-  background-color: #f3f0f0;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
-@media only screen and (min-width: 815px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .restaurants .restaurants__titre {
   font-weight: 500;
@@ -211,7 +233,23 @@ header {
   text-align: left;
   padding: 30px 0 30px 15px;
 }
-.restaurants .restaurants__cartes {
+@media only screen and (min-width: 815px) {
+  .restaurants .restaurants__titre {
+    text-align: center;
+  }
+}
+.restaurants .restaurants__bloc {
+  background-color: #f3f0f0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 634px) {
+  .restaurants .restaurants__bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.restaurants .restaurants__bloc .restaurants__cartes {
   border-radius: 20px;
   border: 1px solid #f2f2f2;
   height: 250px;
@@ -220,21 +258,22 @@ header {
   text-decoration: none;
   color: #1da551;
   position: relative;
+  max-width: 600px;
 }
-.restaurants .restaurants__cartes img {
+.restaurants .restaurants__bloc .restaurants__cartes img {
   width: 100%;
   height: 70%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.restaurants .restaurants__cartes .restaurants__cartes__texte {
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte {
   display: flex;
   justify-content: space-between;
   color: #000;
   padding: 15px 20px 0 10px;
   text-align: left;
 }
-.restaurants .restaurants__cartes .restaurants__nouveau {
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__nouveau {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -243,10 +282,10 @@ header {
   border: 1px solid #a0f7d0;
   background-color: #a0f7d0;
 }
-.restaurants .restaurants__cartes i {
+.restaurants .restaurants__bloc .restaurants__cartes i {
   font-size: 25px;
 }
-.restaurants .restaurants__cartes i:hover {
+.restaurants .restaurants__bloc .restaurants__cartes i:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -275,6 +314,49 @@ header {
 .footer .footer__liste i {
   padding-right: 25px;
   width: 5px;
+}
+
+/*PAGE MENUS*/
+/*header*/
+.header__pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__pages i {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #000;
+  margin-right: 25px;
+}
+.header__pages .logo {
+  text-align: center;
+}
+
+.background {
+  background-image: url(../Maquettes/images/restocomp/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-position: center, center;
+  background-size: cover;
+  height: 20em;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(1.1fr);
+}
+.menu .menu__name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  margin: 20px 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -20px;
+}
+.menu i {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

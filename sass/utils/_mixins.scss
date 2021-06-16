@@ -34,3 +34,21 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+
+/*responsive */
+
+@mixin titre {
+    @media only screen and (min-width: 815px) {
+        text-align: center;
+    }
+}
+
+
+/*menu*/
+
+@mixin background {
+    background-position: center, center;
+    background-size: cover;
+    height: 20em;
+}
