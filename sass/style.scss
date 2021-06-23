@@ -138,7 +138,7 @@ header {
 }
 
 
-/*Resataurant*/
+/*Page d'accueil - Resataurants*/
 
 .restaurants {
     display: flex;
@@ -158,6 +158,9 @@ header {
         @media only screen and (min-width: 634px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            padding: 40px;
+            background-color: transparent;
         }
         .restaurants__cartes {
             @include restocarte;
@@ -165,7 +168,6 @@ header {
             text-decoration: none;
             color: rgb(29, 165, 81);
             position: relative;
-            max-width: 600px;
             img {
                 width: 100%;
                 height: 70%;
@@ -265,7 +267,7 @@ header {
 .menu {
     background-color: rgb(245, 245, 245);
     display: grid;
-    grid-template-columns: repeat(1.1fr);
+    grid-template-columns: repeat(1, 1fr);
     .menu__name {
         display: flex;
         justify-content: space-around;
@@ -285,33 +287,50 @@ header {
     }
 }
 
-.btn__menu {
-    @include btn__menu;
-    p {
-        text-align: left;
-    }
-    &:hover {
-        cursor: pointer;
-    }
-}
-
 .menu__bloc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .menu__entrees {
+    h2 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .menu__choix {
         margin-bottom: 30px;
-        .menu__entrees__titre {
-            @include menu-titre;
+        hr {
+            @include hr;
         }
-    }
-    .menu__plats {
-        margin-bottom: 30px;
-    }
-    .menu__desserts {
-        margin-bottom: 30px;
-        .menu__desserts__titre {
-            @include menu-titre;
+        .btn__menu {
+            display: flex;
+            @include btn-menu;
+            align-items: center;
+            position: relative;
+            p {
+                text-align: left;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            .menu__prix {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                p:first-of-type {
+                    @include menu-titre;
+                    width: 70%;
+                }
+                p:last-of-type {
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+            }
+            .menu__check {
+                @include btn-check;
+                i {
+                    background-color: #fff;
+                    align-items: center;
+                }
+            }
         }
     }
 }

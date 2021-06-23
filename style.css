@@ -221,7 +221,7 @@ header {
   left: -15px;
 }
 
-/*Resataurant*/
+/*Page d'accueil - Resataurants*/
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -247,6 +247,9 @@ header {
   .restaurants .restaurants__bloc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 40px;
+    background-color: transparent;
   }
 }
 .restaurants .restaurants__bloc .restaurants__cartes {
@@ -258,7 +261,6 @@ header {
   text-decoration: none;
   color: #1da551;
   position: relative;
-  max-width: 600px;
 }
 .restaurants .restaurants__bloc .restaurants__cartes img {
   width: 100%;
@@ -364,7 +366,7 @@ header {
 .menu {
   background-color: whitesmoke;
   display: grid;
-  grid-template-columns: repeat(1.1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .menu .menu__name {
   display: flex;
@@ -384,7 +386,26 @@ header {
   padding: 20px;
 }
 
-.btn__menu {
+.menu__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__bloc h2 {
+  text-align: left;
+  margin-left: 20px;
+}
+.menu__bloc .menu__choix {
+  margin-bottom: 30px;
+}
+.menu__bloc .menu__choix hr {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 40px;
+  margin-left: 20px;
+  border: 2px solid #99E2D0;
+}
+.menu__bloc .menu__choix .btn__menu {
   display: flex;
   border: 1px solid #f2f2f2;
   border-radius: 20px;
@@ -392,39 +413,41 @@ header {
   box-shadow: 0px 7px 10px -6px #b9b8b8;
   padding: 15px;
   margin: 10px;
+  align-items: center;
+  position: relative;
 }
-.btn__menu p {
+.menu__bloc .menu__choix .btn__menu p {
   text-align: left;
 }
-.btn__menu:hover {
+.menu__bloc .menu__choix .btn__menu:hover {
   cursor: pointer;
 }
-
-.menu__bloc {
+.menu__bloc .menu__choix .btn__menu .menu__prix {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.menu__bloc .menu__entrees {
-  margin-bottom: 30px;
-}
-.menu__bloc .menu__entrees .menu__entrees__titre {
+.menu__bloc .menu__choix .btn__menu .menu__prix p:first-of-type {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-left: 10px;
+  width: 70%;
 }
-.menu__bloc .menu__plats {
-  margin-bottom: 30px;
+.menu__bloc .menu__choix .btn__menu .menu__prix p:last-of-type {
+  font-weight: bold;
+  margin-right: 5px;
 }
-.menu__bloc .menu__desserts {
-  margin-bottom: 30px;
+.menu__bloc .menu__choix .btn__menu .menu__check {
+  background: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 15%;
 }
-.menu__bloc .menu__desserts .menu__desserts__titre {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-left: 10px;
+.menu__bloc .menu__choix .btn__menu .menu__check i {
+  background-color: #fff;
+  align-items: center;
 }
 
 .commander {

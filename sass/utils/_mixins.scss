@@ -53,8 +53,7 @@
     height: 20em;
 }
 
-@mixin btn__menu {
-    display: flex;
+@mixin btn-menu {
     border: 1px solid #f2f2f2;
     border-radius: 20px;
     background-color: #fff;
@@ -67,5 +66,25 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-left: 10px;
+}
+
+@mixin hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 40px;
+    margin-left: 20px;
+    border: 2px solid #99E2D0;
+}
+
+@mixin btn-check {
+    background: #99E2D0;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 15%;
+}
+
+@mixin check {
+    transition: transform 0.5s;
 }
