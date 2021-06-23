@@ -436,6 +436,7 @@ header {
 .menu__bloc .menu__choix .btn__menu .menu__prix p:last-of-type {
   font-weight: bold;
   margin-right: 5px;
+  margin-left: auto;
 }
 .menu__bloc .menu__choix .btn__menu .menu__check {
   background: #99E2D0;
@@ -446,7 +447,7 @@ header {
   width: 15%;
 }
 .menu__bloc .menu__choix .btn__menu .menu__check i {
-  background-color: #fff;
+  color: #fff;
   align-items: center;
 }
 

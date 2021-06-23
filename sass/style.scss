@@ -322,12 +322,13 @@ header {
                 p:last-of-type {
                     font-weight: bold;
                     margin-right: 5px;
+                    margin-left: auto;
                 }
             }
             .menu__check {
                 @include btn-check;
                 i {
-                    background-color: #fff;
+                    color: #fff;
                     align-items: center;
                 }
             }
