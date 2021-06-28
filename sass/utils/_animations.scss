@@ -1,0 +1,20 @@
+/*animation de chargement*/
+
+@keyframes lumineux {
+    0% {
+        color: $primary-color;
+        text-shadow: 0 0 7px $primary-color;
+        visibility: visible;
+        opacity: 1;
+    }
+    90% {
+        color: $secondary-color;
+        text-shadow: none;
+    }
+    100% {
+        color: $primary-color;
+        text-shadow: 0 0 7px $primary-color;
+        opacity: 0;
+        visibility: hidden;
+    }
+}

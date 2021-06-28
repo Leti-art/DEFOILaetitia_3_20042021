@@ -78,6 +78,25 @@ th {
 
 /*responsive */
 /*menu*/
+/*animation de chargement*/
+@keyframes lumineux {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 body {
   min-width: 375px;
   list-style-type: none;
@@ -90,6 +109,46 @@ body {
   min-width: 375px;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.loader .chargement {
+  position: absolute;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+.loader .chargement__lettre {
+  color: #9356DC;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: lumineux 1.5s infinite linear;
+}
+
+.chargement__lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.chargement__lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.chargement__lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.chargement__lettre:nth-child(4) {
+  animation-delay: 0.4s;
 }
 
 /*PAGE D'ACCUEIL*/
@@ -283,8 +342,7 @@ header {
   fill: whitesmoke;
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte svg:hover {
-  fill: #FF79DA;
-  stroke: #9356DC;
+  stroke: url(gradientTransform.svg#degrade);
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__nouveau {
   position: absolute;
@@ -303,6 +361,14 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+#stop1 {
+  stop-color: #9356DC;
+}
+
+#stop2 {
+  stop-color: #FF79DA;
 }
 
 /*footer*/
