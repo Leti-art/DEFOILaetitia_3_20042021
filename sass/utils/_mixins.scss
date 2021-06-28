@@ -88,3 +88,16 @@
 @mixin check {
     transition: transform 0.5s;
 }
+
+@mixin svg {
+    width: 30px;
+    height: 30px;
+    stroke: black;
+    stroke-width: 15px;
+    fill: rgb(245, 245, 245);
+    &:hover {
+        stroke: $secondary-color;
+        fill: $secondary-color;
+        cursor: pointer;
+    }
+}

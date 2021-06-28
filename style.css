@@ -86,15 +86,38 @@ th {
     visibility: visible;
     opacity: 1;
   }
+  30% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.7;
+  }
   90% {
     color: #FF79DA;
     text-shadow: none;
+    opacity: 0.5;
   }
   100% {
     color: #9356DC;
     text-shadow: 0 0 7px #9356DC;
     opacity: 0;
     visibility: hidden;
+  }
+}
+@keyframes apmenu {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 body {
@@ -111,28 +134,25 @@ body {
   margin: 0 auto;
 }
 
-.loader {
+/*loader*/
+.chargement {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.loader .chargement {
-  position: absolute;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
   width: 100%;
   height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lumineux 2s linear;
+  visibility: hidden;
+  z-index: 10;
 }
-.loader .chargement__lettre {
+.chargement__lettre {
   color: #9356DC;
   font-size: 80px;
   letter-spacing: 15px;
-  animation: lumineux 1.5s infinite linear;
+  margin-bottom: 150px;
+  animation: lumineux 1.2s 3 linear;
 }
 
 .chargement__lettre:nth-child(1) {
@@ -334,16 +354,6 @@ header {
   padding: 15px 15px 0 10px;
   text-align: left;
 }
-.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte svg {
-  width: 30px;
-  height: 30px;
-  stroke: black;
-  stroke-width: 15px;
-  fill: whitesmoke;
-}
-.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte svg:hover {
-  stroke: url(gradientTransform.svg#degrade);
-}
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__nouveau {
   position: absolute;
   top: 15px;
@@ -440,6 +450,19 @@ header {
   height: 20em;
 }
 
+svg {
+  width: 30px;
+  height: 30px;
+  stroke: black;
+  stroke-width: 15px;
+  fill: whitesmoke;
+}
+svg:hover {
+  stroke: #FF79DA;
+  fill: #FF79DA;
+  cursor: pointer;
+}
+
 .menu {
   background-color: whitesmoke;
   display: grid;
@@ -482,6 +505,18 @@ header {
   margin-left: 20px;
   border: 2px solid #99E2D0;
 }
+.menu__bloc .menu__choix p:nth-child(1) {
+  animation: apmenu 0.4s ease;
+}
+.menu__bloc .menu__choix p:nth-child(2) {
+  animation: apmenu 0.5s ease;
+}
+.menu__bloc .menu__choix p:nth-child(3) {
+  animation: apmenu 0.6s ease;
+}
+.menu__bloc .menu__choix p:nth-child(4) {
+  animation: apmenu 0.7s ease;
+}
 .menu__bloc .menu__choix .btn__menu {
   display: flex;
   border: 1px solid #f2f2f2;
@@ -502,7 +537,7 @@ header {
 }
 .menu__bloc .menu__choix .btn__menu .menu__titre {
   width: 100%;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease;
 }
 .menu__bloc .menu__choix .btn__menu .menu__prix {
   display: flex;
@@ -531,7 +566,7 @@ header {
   right: 0;
   width: 15%;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 .menu__bloc .menu__choix .btn__menu .menu__check i {
   color: #fff;
@@ -544,7 +579,7 @@ header {
 }
 .menu__bloc .menu__choix .btn__menu:hover .menu__check i {
   transform: rotate(360deg);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:hover .menu__titre {
   width: 80%;
