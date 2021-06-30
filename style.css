@@ -368,6 +368,9 @@ header {
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris .favoris__active {
   display: none;
 }
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover {
+  cursor: pointer;
+}
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__active {
   display: block;
 }
@@ -472,6 +475,23 @@ header {
   border-radius: 40px 40px 0 0;
   margin-top: -30px;
   background-color: whitesmoke;
+}
+.menu .menu__name .favoris svg {
+  height: 1em;
+  width: 1em;
+  font-size: 30px;
+}
+.menu .menu__name .favoris .favoris__active {
+  display: none;
+}
+.menu .menu__name .favoris:hover {
+  cursor: pointer;
+}
+.menu .menu__name .favoris:hover .favoris__active {
+  display: block;
+}
+.menu .menu__name .favoris:hover .favoris__inactive {
+  display: none;
 }
 .menu i {
   font-size: 20px;

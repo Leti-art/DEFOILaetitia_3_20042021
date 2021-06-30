@@ -83,21 +83,29 @@
     transition: transform 0.5s;
 }
 
-@mixin svg {
-    width: 30px;
-    height: 30px;
-    stroke: black;
-    stroke-width: 15px;
-    fill: rgb(245, 245, 245);
-    &:hover {
-        stroke: $secondary-color;
-        fill: $secondary-color;
-        cursor: pointer;
-        opacity: 0.9;
-    }
-}
-
 @mixin menuanim {
     transform: translateY(100%);
     transition: transform .3s ease;
+}
+
+@mixin coeur {
+    .favoris {
+        svg {
+            height: 1em;
+            width: 1em;
+            font-size: 30px;
+        }
+        .favoris__active {
+            display: none;
+        }
+        &:hover {
+            cursor: pointer;
+            .favoris__active {
+                display: block;
+            }
+            .favoris__inactive {
+                display: none;
+            }
+        }
+    }
 }
