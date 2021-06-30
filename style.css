@@ -525,16 +525,16 @@ svg:hover {
   position: relative;
   overflow: hidden;
 }
-.menu__bloc .menu__choix .btn__menu:nth-child(1) {
+.menu__bloc .menu__choix .btn__menu:nth-of-type(1) {
   animation: apmenu 0.5s ease;
 }
-.menu__bloc .menu__choix .btn__menu:nth-child(2) {
+.menu__bloc .menu__choix .btn__menu:nth-of-type(2) {
   animation: apmenu 1s ease;
 }
-.menu__bloc .menu__choix .btn__menu:nth-child(3) {
+.menu__bloc .menu__choix .btn__menu:nth-of-typed(3) {
   animation: apmenu 1.5s ease;
 }
-.menu__bloc .menu__choix .btn__menu:nth-child(4) {
+.menu__bloc .menu__choix .btn__menu:nth-of-type(4) {
   animation: apmenu 2s ease;
 }
 .menu__bloc .menu__choix .btn__menu p {

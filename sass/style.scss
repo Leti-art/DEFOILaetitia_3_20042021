@@ -363,16 +363,16 @@ svg {
             align-items: center;
             position: relative;
             overflow: hidden;
-            &:nth-child(1) {
+            &:nth-of-type(1) {
                 animation: apmenu 0.5s ease;
             }
-            &:nth-child(2) {
+            &:nth-of-type(2) {
                 animation: apmenu 1s ease;
             }
-            &:nth-child(3) {
+            &:nth-of-typed(3) {
                 animation: apmenu 1.5s ease;
             }
-            &:nth-child(4) {
+            &:nth-of-type(4) {
                 animation: apmenu 2s ease;
             }
             p {
