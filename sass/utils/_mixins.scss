@@ -26,13 +26,7 @@
     padding: 5px 7px;
     border: 1px solid #a0f7d0;
     background-color: #a0f7d0;
-}
-
-@mixin coeur {
-    background: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    border-color: transparent;
 }
 
 
@@ -99,5 +93,11 @@
         stroke: $secondary-color;
         fill: $secondary-color;
         cursor: pointer;
+        opacity: 0.9;
     }
+}
+
+@mixin menuanim {
+    transform: translateY(100%);
+    transition: transform .3s ease;
 }

@@ -362,15 +362,10 @@ header {
   padding: 5px 7px;
   border: 1px solid #a0f7d0;
   background-color: #a0f7d0;
+  border-color: transparent;
 }
 .restaurants .restaurants__bloc .restaurants__cartes i {
   font-size: 25px;
-}
-.restaurants .restaurants__bloc .restaurants__cartes i:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 #stop1 {
@@ -461,6 +456,7 @@ svg:hover {
   stroke: #FF79DA;
   fill: #FF79DA;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .menu {
@@ -491,6 +487,12 @@ svg:hover {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (min-width: 1109px) {
+  .menu__bloc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .menu__bloc h2 {
   text-align: left;
   margin-left: 20px;
@@ -506,16 +508,16 @@ svg:hover {
   border: 2px solid #99E2D0;
 }
 .menu__bloc .menu__choix p:nth-child(1) {
-  animation: apmenu 0.4s ease;
-}
-.menu__bloc .menu__choix p:nth-child(2) {
   animation: apmenu 0.5s ease;
 }
+.menu__bloc .menu__choix p:nth-child(2) {
+  animation: apmenu 1s ease;
+}
 .menu__bloc .menu__choix p:nth-child(3) {
-  animation: apmenu 0.6s ease;
+  animation: apmenu 1.5s ease;
 }
 .menu__bloc .menu__choix p:nth-child(4) {
-  animation: apmenu 0.7s ease;
+  animation: apmenu 2s ease;
 }
 .menu__bloc .menu__choix .btn__menu {
   display: flex;
