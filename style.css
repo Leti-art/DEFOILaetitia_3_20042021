@@ -531,7 +531,7 @@ svg:hover {
 .menu__bloc .menu__choix .btn__menu:nth-of-type(2) {
   animation: apmenu 1s ease;
 }
-.menu__bloc .menu__choix .btn__menu:nth-of-typed(3) {
+.menu__bloc .menu__choix .btn__menu:nth-of-type(3) {
   animation: apmenu 1.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:nth-of-type(4) {
