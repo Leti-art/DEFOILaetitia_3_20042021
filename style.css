@@ -143,7 +143,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: lumineux 2s linear;
+  animation: lumineux 2.5s linear;
   visibility: hidden;
   z-index: 10;
 }
@@ -152,7 +152,7 @@ body {
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
-  animation: lumineux 1.2s 3 linear;
+  animation: lumineux 0.7s 3 linear;
 }
 
 .chargement__lettre:nth-child(1) {
@@ -360,6 +360,20 @@ header {
   padding: 15px 15px 0 10px;
   text-align: left;
 }
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris svg {
+  height: 1em;
+  width: 1em;
+  font-size: 30px;
+}
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris .favoris__active {
+  display: none;
+}
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__active {
+  display: block;
+}
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__inactive {
+  display: none;
+}
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__nouveau {
   position: absolute;
   top: 15px;
@@ -372,14 +386,6 @@ header {
 }
 .restaurants .restaurants__bloc .restaurants__cartes i {
   font-size: 25px;
-}
-
-#stop1 {
-  stop-color: #9356DC;
-}
-
-#stop2 {
-  stop-color: #FF79DA;
 }
 
 /*footer*/
@@ -449,20 +455,6 @@ header {
   background-position: center, center;
   background-size: cover;
   height: 20em;
-}
-
-svg {
-  width: 30px;
-  height: 30px;
-  stroke: black;
-  stroke-width: 15px;
-  fill: whitesmoke;
-}
-svg:hover {
-  stroke: #FF79DA;
-  fill: #FF79DA;
-  cursor: pointer;
-  opacity: 0.9;
 }
 
 .menu {
