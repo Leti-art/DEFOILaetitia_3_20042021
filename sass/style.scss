@@ -184,6 +184,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #f3f0f0;
+    @media only screen and (min-width: 634px) {
+        background-color: transparent;
+    }
     .restaurants__titre {
         font-weight: 500;
         font-size: 20px;
@@ -353,16 +357,16 @@ svg {
         hr {
             @include hr;
         }
-        p:nth-child(1) {
+        &:nth-child(1) {
             animation: apmenu 0.5s ease;
         }
-        p:nth-child(2) {
+        &:nth-child(2) {
             animation: apmenu 1s ease;
         }
-        p:nth-child(3) {
+        &:nth-child(3) {
             animation: apmenu 1.5s ease;
         }
-        p:nth-child(4) {
+        &:nth-child(4) {
             animation: apmenu 2s ease;
         }
         .btn__menu {

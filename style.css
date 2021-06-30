@@ -305,6 +305,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #f3f0f0;
+}
+@media only screen and (min-width: 634px) {
+  .restaurants {
+    background-color: transparent;
+  }
 }
 .restaurants .restaurants__titre {
   font-weight: 500;
@@ -507,16 +513,16 @@ svg:hover {
   margin-left: 20px;
   border: 2px solid #99E2D0;
 }
-.menu__bloc .menu__choix p:nth-child(1) {
+.menu__bloc .menu__choix:nth-child(1) {
   animation: apmenu 0.5s ease;
 }
-.menu__bloc .menu__choix p:nth-child(2) {
+.menu__bloc .menu__choix:nth-child(2) {
   animation: apmenu 1s ease;
 }
-.menu__bloc .menu__choix p:nth-child(3) {
+.menu__bloc .menu__choix:nth-child(3) {
   animation: apmenu 1.5s ease;
 }
-.menu__bloc .menu__choix p:nth-child(4) {
+.menu__bloc .menu__choix:nth-child(4) {
   animation: apmenu 2s ease;
 }
 .menu__bloc .menu__choix .btn__menu {
