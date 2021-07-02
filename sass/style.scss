@@ -303,6 +303,9 @@ header {
         margin-top: -30px;
         background-color: rgb(245, 245, 245);
         @include coeur;
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
     }
     h1 {
         padding: 20px;
