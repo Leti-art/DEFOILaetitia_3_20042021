@@ -45,6 +45,11 @@
     background-position: center, center;
     background-size: cover;
     height: 20em;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @mixin btn-menu {
@@ -53,7 +58,8 @@
     background-color: #fff;
     box-shadow: 0px 7px 10px -6px #b9b8b8;
     padding: 15px;
-    margin: 10px;
+    margin: 3%;
+    width: 94%;
 }
 
 @mixin menu-titre {
@@ -90,33 +96,6 @@
 }
 
 @mixin coeur {
-    .favoris {
-        position: relative;
-        align-items: center;
-        svg {
-            height: 1em;
-            width: 1em;
-            font-size: 30px;
-            position: absolute;
-            right: 10px;
-        }
-        .favoris__active {
-            display: none;
-        }
-        &:hover {
-            cursor: pointer;
-            animation: favoris 0.5s ease;
-            .favoris__active {
-                display: block;
-            }
-            .favoris__inactive {
-                display: none;
-            }
-        }
-    }
-}
-
-@mixin essai {
     .favoris {
         display: flex;
         padding-bottom: 1.5rem;
