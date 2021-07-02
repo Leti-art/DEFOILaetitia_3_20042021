@@ -104,6 +104,31 @@ th {
     visibility: hidden;
   }
 }
+@-webkit-keyframes lumineux {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    visibility: visible;
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  90% {
+    color: #FF79DA;
+    text-shadow: none;
+    opacity: 0.5;
+  }
+  100% {
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes apmenu {
   0% {
     opacity: 0;
@@ -120,7 +145,37 @@ th {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes apmenu {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes favoris {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes favoris {
   0% {
     opacity: 0;
   }
@@ -395,6 +450,7 @@ header {
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover {
   cursor: pointer;
   animation: favoris 0.5s ease;
+  -webkit-animation: favoris 0.5s ease;
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__active {
   opacity: 1;
@@ -503,6 +559,7 @@ header {
 .menu .menu__name .favoris:hover {
   cursor: pointer;
   animation: favoris 0.5s ease;
+  -webkit-animation: favoris 0.5s ease;
 }
 .menu .menu__name .favoris:hover .favoris__active {
   opacity: 1;
