@@ -120,6 +120,20 @@ th {
     transform: translateY(0);
   }
 }
+@keyframes favoris {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   min-width: 375px;
   list-style-type: none;
@@ -370,6 +384,7 @@ header {
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover {
   cursor: pointer;
+  animation: favoris 0.5s ease;
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__active {
   display: block;
@@ -386,9 +401,6 @@ header {
   border: 1px solid #a0f7d0;
   background-color: #a0f7d0;
   border-color: transparent;
-}
-.restaurants .restaurants__bloc .restaurants__cartes i {
-  font-size: 25px;
 }
 
 /*footer*/
@@ -486,15 +498,13 @@ header {
 }
 .menu .menu__name .favoris:hover {
   cursor: pointer;
+  animation: favoris 0.5s ease;
 }
 .menu .menu__name .favoris:hover .favoris__active {
   display: block;
 }
 .menu .menu__name .favoris:hover .favoris__inactive {
   display: none;
-}
-.menu i {
-  font-size: 20px;
 }
 .menu h1 {
   padding: 20px;
@@ -591,6 +601,7 @@ header {
 .menu__bloc .menu__choix .btn__menu .menu__check i {
   color: #fff;
   align-items: center;
+  font-size: 25px;
 }
 .menu__bloc .menu__choix .btn__menu:hover .menu__check {
   align-items: center;
