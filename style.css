@@ -374,10 +374,16 @@ header {
   padding: 15px 15px 0 10px;
   text-align: left;
 }
+.restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris {
+  position: relative;
+  align-items: center;
+}
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris svg {
   height: 1em;
   width: 1em;
   font-size: 30px;
+  position: absolute;
+  right: 10px;
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris .favoris__active {
   display: none;
@@ -488,10 +494,16 @@ header {
   margin-top: -30px;
   background-color: whitesmoke;
 }
+.menu .menu__name .favoris {
+  position: relative;
+  align-items: center;
+}
 .menu .menu__name .favoris svg {
   height: 1em;
   width: 1em;
   font-size: 30px;
+  position: absolute;
+  right: 10px;
 }
 .menu .menu__name .favoris .favoris__active {
   display: none;
@@ -534,6 +546,7 @@ header {
   width: 40px;
   margin-left: 20px;
   border: 2px solid #99E2D0;
+  background-color: #99E2D0;
 }
 .menu__bloc .menu__choix .btn__menu {
   display: flex;
