@@ -10,8 +10,8 @@
 }
 
 @mixin survol {
-    opacity: 0.60;
-    box-shadow: 6px 6px 5px 2px grey;
+    opacity: 0.70;
+    box-shadow: 6px 6px 5px 2px rgb(206, 206, 206);
 }
 
 @mixin restocarte {
@@ -24,8 +24,8 @@
 @mixin nouveau {
     border-radius: 5px;
     padding: 5px 7px;
-    border: 1px solid #a0f7d0;
-    background-color: #a0f7d0;
+    border: 1px solid $tertiary-color;
+    background-color: $tertiary-color;
     border-color: transparent;
 }
 
@@ -78,12 +78,12 @@
     margin-bottom: 10px;
     width: 40px;
     margin-left: 20px;
-    border: 2px solid #99E2D0;
-    background-color: #99E2D0;
+    border: 2px solid $tertiary-color;
+    background-color: $tertiary-color;
 }
 
 @mixin btn-check {
-    background: #99E2D0;
+    background: $tertiary-color;
     border-radius: 0 20px 20px 0;
     height: 100%;
     position: absolute;

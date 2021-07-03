@@ -129,6 +129,7 @@ th {
     visibility: hidden;
   }
 }
+/*animation des boutons menu*/
 @keyframes apmenu {
   0% {
     opacity: 0;
@@ -161,6 +162,7 @@ th {
     transform: translateY(0);
   }
 }
+/*animation des coeurs*/
 @keyframes favoris {
   0% {
     opacity: 0;
@@ -176,6 +178,34 @@ th {
   }
 }
 @-webkit-keyframes favoris {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes favoris {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes favoris {
   0% {
     opacity: 0;
   }
@@ -292,8 +322,8 @@ header {
 }
 .btn__action:hover {
   cursor: pointer;
-  opacity: 0.6;
-  box-shadow: 6px 6px 5px 2px grey;
+  opacity: 0.7;
+  box-shadow: 6px 6px 5px 2px #cecece;
 }
 
 /*Fonctionnement*/
@@ -469,8 +499,8 @@ header {
   right: 15px;
   border-radius: 5px;
   padding: 5px 7px;
-  border: 1px solid #a0f7d0;
-  background-color: #a0f7d0;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
   border-color: transparent;
 }
 
@@ -634,19 +664,15 @@ header {
 }
 .menu__bloc .menu__choix .btn__menu:nth-of-type(1) {
   animation: apmenu 0.5s ease;
-  -webkit-animation: apmenu 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:nth-of-type(2) {
   animation: apmenu 1s ease;
-  -webkit-animation: apmenu 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:nth-of-type(3) {
   animation: apmenu 1.5s ease;
-  -webkit-animation: apmenu 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:nth-of-type(4) {
   animation: apmenu 2s ease;
-  -webkit-animation: apmenu 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu p {
   text-align: left;
@@ -685,7 +711,9 @@ header {
   right: 0;
   width: 15%;
   transform: translateX(100%);
+  -webkit-transform: translateX(100%);
   transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
 }
 .menu__bloc .menu__choix .btn__menu .menu__check i {
   color: #fff;
@@ -699,7 +727,9 @@ header {
 }
 .menu__bloc .menu__choix .btn__menu:hover .menu__check i {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
 }
 .menu__bloc .menu__choix .btn__menu:hover .menu__titre {
   width: 80%;

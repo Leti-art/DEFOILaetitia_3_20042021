@@ -52,6 +52,9 @@
     }
 }
 
+
+/*animation des boutons menu*/
+
 @keyframes apmenu {
     0% {
         opacity: 0;
@@ -86,6 +89,9 @@
     }
 }
 
+
+/*animation des coeurs*/
+
 @keyframes favoris {
     0% {
         opacity: 0;
@@ -102,6 +108,36 @@
 }
 
 @-webkit-keyframes favoris {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes favoris {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes favoris {
     0% {
         opacity: 0;
     }
