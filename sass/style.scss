@@ -272,11 +272,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     i {
         font-size: 20px;
         margin-left: 10px;
         color: #000;
-        margin-right: 25px;
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
     }
     .logo {
         text-align: center;

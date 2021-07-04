@@ -534,12 +534,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header__pages i {
   font-size: 20px;
   margin-left: 10px;
   color: #000;
-  margin-right: 25px;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
 }
 .header__pages .logo {
   text-align: center;
