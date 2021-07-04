@@ -485,7 +485,7 @@ header {
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover {
   cursor: pointer;
   animation: favoris 0.5s ease;
-  -webkit-animation: favoris 0.5s ease;
+  -webkit-animation: favoris 1s ease;
 }
 .restaurants .restaurants__bloc .restaurants__cartes .restaurants__cartes__texte .favoris:hover .favoris__active {
   opacity: 1;
@@ -606,7 +606,7 @@ header {
 .menu .menu__name .favoris:hover {
   cursor: pointer;
   animation: favoris 0.5s ease;
-  -webkit-animation: favoris 0.5s ease;
+  -webkit-animation: favoris 1s ease;
 }
 .menu .menu__name .favoris:hover .favoris__active {
   opacity: 1;

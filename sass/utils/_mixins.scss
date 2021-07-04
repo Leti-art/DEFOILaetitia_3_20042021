@@ -124,7 +124,7 @@
         &:hover {
             cursor: pointer;
             animation: favoris 0.5s ease;
-            -webkit-animation: favoris 0.5s ease;
+            -webkit-animation: favoris 1s ease;
             .favoris__active {
                 opacity: 1;
             }
